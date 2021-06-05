@@ -14,8 +14,8 @@ function createDiv() {
         div.classList.add('square');
         grid.appendChild(div);
     }
-    //displays the div as a grid, using the ${} selector for variables inside css
-    selectDiv.style.cssText = `display: grid; grid-template-rows: repeat(${limit}, 1fr); grid-template-columns: repeat(${limit}, 1fr); grip-gap: 0px;`
+    //displays the div as a grid, using the ${} selector for variables inside css, 1fr is a great element to take up the parent div space
+    selectDiv.style.cssText = `display: grid; grid-template-rows: repeat(${limit}, 1fr); grid-template-columns: repeat(${limit}, 1fr);`
 }
     //listens for a click for the button
     clickButton.addEventListener('click', () => {
