@@ -1,0 +1,15 @@
+.square {
+    border: 1px solid;
+}
+div {
+    height: 100%;
+    width: 100%;
+}
+.color {
+    background-color: black;
+}
+#grid-container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
