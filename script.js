@@ -3,7 +3,9 @@ const selectDiv = document.querySelector('div');
 const selectAllDiv = document.querySelectorAll('div');
 const changeColor = document.querySelectorAll('square');
 const clickButton = document.querySelector('button');
-let limit = 64;
+//starting grid
+let limit = 16;
+createDiv();
 
 //creates the amount of div needed in order to resemble a grid, in this case using multiplier
 function createDiv() {
@@ -33,8 +35,8 @@ function createDiv() {
     //listens for hover over a singular div
     selectAllDiv.forEach((div) => {
         div.addEventListener('mouseover', (e) => {
-            e.target.classList.add('color')
+            //e.target.classList.add('color')
+            let randomColor = Math.floor(Math.random()* 256);
+            e.target.style.cssText = `background-color: rgb(${randomColor}, ${randomColor}, ${randomColor})`
         });
     });
-
-createDiv();
